@@ -9,11 +9,11 @@
 </head>
 
 <body>
-        <header>
-            <?php wp_nav_menu([
-                    'menu' => 'Menu 1',
-                    'theme_location' => 'header',
-                    'container' => "nav",
-                ]);
-                ?>
-        </header>
+    <header>
+        <?php wp_nav_menu([
+            'menu' => 'Menu 1',
+            'theme_location' => 'header',
+            'container' => "nav",
+        ]);
+        ?>
+    </header>
