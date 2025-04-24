@@ -1,0 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background: $background;
+  flex-direction: column;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.marges{
+  display: flex;
+  flex-flow: column nowrap;
+  width: clamp($min-width, $width, $max-width);
+  position: relative;
+}
+
