@@ -1,6 +1,6 @@
 <?php
 
-function montheme_supports()
+function ecv_setup_theme_features()
 {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
@@ -44,13 +44,13 @@ function montheme_types()
 }
 
 
-add_action('init', 'montheme_support');
+add_action('init', 'ecv_setup_theme_features');
 
 add_action('init', 'montheme_types');
 
 add_action('wp_enqueue_scripts', 'montheme_register_assets');
 
-add_action('after_setup_theme', 'montheme_supports');
+add_action('after_setup_theme', 'ecv_setup_theme_features');
 
 add_filter('document_title_separator', 'montheme_title_separator');
 
